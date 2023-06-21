@@ -42,7 +42,12 @@ This script allows you to fetch account details from a text file or an Excel fil
    - For Excel file export: exported-accounts.xlsx
 
 ## File Formats
-   - Text file (.txt): The script reads the provided text file, retrieves the specified number of accounts, and exports the data to an Excel file.
+
+   - Text file (.txt): The script reads the provided text file, which should have the following format for each account:
+
+     ```ruby
+     Username:Password:Shared_Secret:Identity_Secret
+
    - Excel file (.xlsx): The script reads the provided Excel file, retrieves the specified number of accounts, and exports the data to a text file.
 
 ## Dependencies
